@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: msmBluelist170117
+  host: msmBluelist170117
+  disk_quota: 1024M
+  services:
+  - msmBluelist170117-AdvancedMobileAccess
+  - msmBluelist170117-imfpush
+  - msmBluelist170117-cloudantNoSQLDB
+  env:
+    ENABLE_ANALYTICS_SDK: 'no'
